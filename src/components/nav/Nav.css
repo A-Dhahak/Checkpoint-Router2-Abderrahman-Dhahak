@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00008B;
+    color:whitesmoke;
+}
+h2
+{
+    color:turquoise;
+}
+
+.nav-link
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+.navistyle
+{
+    color:whitesmoke;
+    text-decoration:none;
+}
