@@ -1,7 +1,15 @@
 
 import MovieList from './components/movieList/MovieList';
 import Nav from './components/nav/Nav';
-import Home from './components/home/Home'
+import Home from './components/home/Home';
+import MovieCard1 from './components/movieCard/MovieCard1';
+import MovieCard2 from './components/movieCard/MovieCard2';
+import MovieCard3 from './components/movieCard/MovieCard3';
+import MovieCard4 from './components/movieCard/MovieCard4';
+import MovieCard5 from './components/movieCard/MovieCard5';
+import MovieCard6 from './components/movieCard/MovieCard6';
+import MovieCard7 from './components/movieCard/MovieCard7';
+
 import React, {useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
@@ -11,7 +19,7 @@ function App() {
     {
     title:"Harry Potter and the sorcerer's stone ",
     description:"This is the tale of Harry Potter (Daniel Radcliffe), an ordinary eleven-year-old boy serving as a sort of slave for his aunt and uncle who learns that he is actually a wizard and has been invited to attend the Hogwarts School for Witchcraft and Wizardry.",
-    poster:"https://static.wikia.nocookie.net/harrypotter/images/f/fb/PS_poster.jpg/revision/latest?cb=20180318153750",
+    poster:"https://cdn.shopify.com/s/files/1/0037/8008/3782/products/IMG_1954-570407_1024x1024@2x.jpg?v=1611688002",
     rate:"4",
   
   },
@@ -69,7 +77,14 @@ function App() {
       <Route exact  path ="/" >
          <Home movies = {movies} />
       </Route>
-      <Route  path ="/MovieList"><MovieList  movies ={movies} /></Route>
+      <Route  exact path ="/MovieList"><MovieList  /*movies ={movies}*/ /></Route>
+      <Route exact path ="/MovieCard"><MovieCard1/></Route>
+      <Route exact path ="/MovieCard2"><MovieCard2/></Route>
+      <Route exact path ="/MovieCard3"><MovieCard3/></Route>
+      <Route exact path ="/MovieCard4"><MovieCard4/></Route>
+      <Route exact path ="/MovieCard5"><MovieCard5/></Route>
+      <Route exact path ="/MovieCard6"><MovieCard6/></Route>
+      <Route exact path ="/MovieCard7"><MovieCard7/></Route>
       </Switch>
     </div>
     </Router>
